@@ -31,32 +31,32 @@
 
 // // // (1-st stady program)
 
-const numberofFilms = +prompt("How many film have you alredy watched", "");
-const personalMovieDB = {
-  count: numberofFilms,
-  movies: {
-    //   call: {},
-    // },
-    actors: {},
-    genres: [],
-    private: false,
-  },
-};
+// const numberofFilms = +prompt("How many film have you alredy watched");
+// const personalMovieDB = {
+//   count: numberofFilms,
+//   movies: {
+//     //   call: {},
+//     // },
+//     actors: {},
+//     genres: [],
+//     private: false,
+//   },
+// };
 
-const a = prompt("Tell me one of the last movies you saw", ""),
-  b = prompt("what grade will you give him", ""),
-  c = prompt("Tell me one of the last movies you saw", ""),
-  d = prompt("what grade will you give him", "");
+// const a = prompt("Tell me one of the last movies you saw"),
+//   b = prompt("what grade will you give him", ""),
+//   c = prompt("Tell me one of the last movies you saw", ""),
+//   d = prompt("what grade will you give him", "");
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-console.log(personalMovieDB);
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
+// console.log(personalMovieDB);
 
-if (8590) {
-  console.log("ok");
-} else {
-  console.log("eror");
-}
+// if ("rtrtr") {
+//   console.log("ok");
+// } else {
+//   console.log("eror");
+// }
 
 // // const num = "good";
 // // switch (num) {
@@ -312,22 +312,56 @@ if (8590) {
 
 //                                                                      Christmas Tree
 
-const lines = 6;
-let result = "";
-let star = "*";
+// const lines = 6;
+// let result = "";
+// let star = "*";
 
-for (let j = lines; j >= 0; j--) {
-  for (let i = 0; j > i; i++) {
-    result += " ";
+// for (let j = lines; j >= 0; j--) {
+//   for (let i = 0; j > i; i++) {
+//     result += " ";
+//   }
+
+//   result = result + star;
+
+//   for (let i = 0; 2 > i; i++) {
+//     star += "*";
+//   }
+//   result += "\n";
+// }
+
+// console.log(result);
+
+// first work
+
+const numberofFilms = +prompt("How many film have you alredy watched", "");
+const personalMovieDB = {
+  count: numberofFilms,
+  movies: {
+    //   call: {},
+  },
+  actors: {},
+  genres: [],
+  private: false,
+};
+
+for (let i = 0; i < 2; i++) {
+  const a = prompt("Tell me one of the last movies you saw", ""),
+    b = prompt("what grade will you give him", "");
+
+  if (
+    a != null &&
+    b != null &&
+    a != "" &&
+    b != "" &&
+    a.length < 50 &&
+    b.length < 50
+  ) {
+    personalMovieDB.movies[a] = b;
+    console.log("done");
+  } else {
+    console.log("error");
+    i--;
   }
-
-  result = result + star;
-
-  for (let i = 0; 2 > i; i++) {
-    star += "*";
-  }
-  result += "\n";
 }
 
-console.log(result);
-1;
+console.log(personalMovieDB);
