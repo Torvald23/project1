@@ -330,3 +330,4 @@ for (let j = lines; j >= 0; j--) {
 }
 
 console.log(result);
+1;
