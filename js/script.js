@@ -344,24 +344,76 @@ const personalMovieDB = {
   private: false,
 };
 
-for (let i = 0; i < 2; i++) {
-  const a = prompt("Tell me one of the last movies you saw", ""),
-    b = prompt("what grade will you give him", "");
+// for (let i = 0; i < 2; i++) {
+//   const a = prompt("Tell me one of the last movies you saw", ""),
+//     b = prompt("what grade will you give him", "");
 
-  if (
-    a != null &&
-    b != null &&
-    a != "" &&
-    b != "" &&
-    a.length < 50 &&
-    b.length < 50
-  ) {
-    personalMovieDB.movies[a] = b;
-    console.log("done");
-  } else {
-    console.log("error");
-    i--;
-  }
-}
+//   if (
+//     a != null &&
+//     b != null &&
+//     a != "" &&
+//     b != "" &&
+//     a.length < 50 &&
+//     b.length < 50
+//   ) {
+//     personalMovieDB.movies[a] = b;
+//     console.log("done");
+//   } else {
+//     console.log("error");
+//     i--;
+//   }
+// }
 
-console.log(personalMovieDB);
+// let i = 0;
+// while (i < 2) {
+//   const a = prompt("Tell me one of the last movies you saw", ""),
+//     b = prompt("what grade will you give him", "");
+
+//   if (
+//     a != null &&
+//     b != null &&
+//     a != "" &&
+//     b != "" &&
+//     a.length < 50 &&
+//     b.length < 50
+//   ) {
+//     personalMovieDB.movies[a] = b;
+//     console.log("done");
+//   } else {
+//     console.log("error");
+//     i--;
+//   }
+//   i++;
+// }
+
+// let i = 0;
+// do {
+//   const a = prompt("Tell me one of the last movies you saw", ""),
+//     b = prompt("what grade will you give him", "");
+
+//   if (
+//     a != null &&
+//     b != null &&
+//     a != "" &&
+//     b != "" &&
+//     a.length < 50 &&
+//     b.length < 50
+//   ) {
+//     personalMovieDB.movies[a] = b;
+//     console.log("done");
+//   } else {
+//     console.log("error");
+//     i--;
+//   }
+//   i++;
+// } while (i < 2);
+
+// if (personalMovieDB.count < 10) {
+//   console.log("You watched too less film");
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//   console.log("You are good watcher");
+// } else if (personalMovieDB.count >= 30) {
+//   prompt("you are cinephile");
+// } else {
+//   console.log("error");
+// }
