@@ -453,3 +453,37 @@ function writeYouGenres() {
 }
 writeYouGenres();
 console.log(genres);
+
+const options = {
+  name: "test",
+  width: 4,
+  height: 1024,
+  colors: {
+    border: "black",
+    bg: "red",
+  },
+  // makeTest: function () {
+  //   console.log("Test");
+  // },
+};
+
+// options.makeTest();
+
+const { name, height, width } = options;
+
+console.log(name);
+// console.log(Object.keys(options.colors).length);
+
+// console.log(options.colors.border);
+
+// перебор свойств внутри об'екта
+
+for (let k in options) {
+  if (typeof options[k] === "object") {
+    for (let i in options[k]) {
+      console.log(`Властивість ${i} має значення ${options[k][i]} `);
+    }
+  } else {
+    console.log(`Свойство ${k} имеет значение ${options[k]}`);
+  }
+}
